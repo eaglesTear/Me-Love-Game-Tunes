@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vg_ost-styles/contact.css" />
+</head>
+
+<body>
+
+    <div class="menu">
+        <i class="material-icons pos-left" onclick="openNav()">menu</i> menu
+        <div id="mySidepanel" class="sidepanel">
+            <!-- JS VOID STOPS LINK REFRESHING IF JS ATTACHED TO LINK. RETURNS UNDEFINED -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Home</a>
+            <a href="top10-vg-ost's.html">Article Page</a>
+            <a href="#">About</a>
+            <a href="https://downloads.khinsider.com/">Khinsider</a>
+        </div>
+        <i class="material-icons pos-right" onclick="searchAlert()">search</i>
+        <input type="search" placeholder="Search..." class="search-style" />
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="top10-vg-ost's.html">Article Page</a>
+        <a href="#">About</a>
+        <a href="https://downloads.khinsider.com/">Khinsider</a>
+    </nav>
+
+    <h1>Feel free to share your thoughts with me!</h1>
+    <p class="centre-para">I do try to respond to each message but please be aware that it may take time.</p>
+
+    <svg class="face">
+        <circle cx="50" cy="50" r="50" fill="#FDD835" />
+        <circle cx="30" cy="30" r="10" fill="#FDD835" />
+        <circle cx="70" cy="30" r="10" fill="#FDD835" />
+        <circle cx="30" cy="30" r="5" fill="#000" />
+        <circle cx="70" cy="30" r="5" fill="#000" />
+        <path d="M 30 70 q 20 20 40 0" stroke="#000" stroke-width="5" fill="none" />
+    </svg>
+
+    <form>
+        <input name="name" placeholder="Name" type="text" required /><br />
+        <input name="email" placeholder="Email" type="email" required /><br />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="submit" value="SEND" class="submit" />
+    </form>
+
+    <footer>
+        <div class="left-section">
+            <ul>
+                <li>Skip to track:</li>
+                <!-- CHANGE LINKS TO JUMP TO SECTIONS ON OTHER PAGE -->
+                <li><a href="top10-vg-ost's.html#StellarLight">Eschatos</a></li>
+                <li><a href="top10-vg-ost's.html#Scala">Street Fighter Zero 3</a></li>
+                <li><a href="top10-vg-ost's.html#Intro">Crysis 2</a></li>
+                <li><a href="top10-vg-ost's.html#GothamByNight">Batman and Robin</a></li>
+                <li><a href="top10-vg-ost's.html#Infinity">Final Soldier</a></li>
+                <li><a href="top10-vg-ost's.html#Frontier">Velocity 2X</a></li>
+                <li><a href="top10-vg-ost's.html#ActOnInstinct">Command &amp; Conquer</a></li>
+                <li><a href="top10-vg-ost's.html#Permafrost">20XX</a></li>
+                <li><a href="top10-vg-ost's.html#Stage2">Nexzr</a></li>
+                <li><a href="top10-vg-ost's.html#MainTable">Devil Crash</a></li>
+            </ul>
+        </div>
+        <div class="mid-section">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="top10-vg-ost's.html">Article Page</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://downloads.khinsider.com/">Khinsider</a></li>
+                <li><a href="#top">Back to Top</a></li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a><br />
+            <script>
+                // REAL-TIME UPDATING OF WEBSITE PROVIDED FOR USER/CLIENT
+                document.write('Copyright &copy; Ryan Hadley &#x264F; ', new Date().getFullYear(), ("<br/>"), 'All Rights Reserved.');
+                document.write("<br/>", ' Last modified ' + document.lastModified);
+            </script>
+        </div>
+    </footer>
+
+    <script>
+        // SIDEBAR MENU FUNCTIONS TO TOGGLE PANE ON/OFF 
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+
+        function searchAlert() {
+            alert("Search bar is inactive at this time!");
+        }
+    </script>
+
+</body>
+
+</html>
